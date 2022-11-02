@@ -1,0 +1,66 @@
+.pokemonlist {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 1200px;
+    grid-gap: 40px;
+    margin: 40px auto;
+}
+
+.pokemonlist .card {
+    background: #FFF;
+    color: #333;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.pokemonlist .card h3 {
+    margin-bottom: 6px;
+    color: #555;
+}
+
+.pokemonlist .card p {
+    font-size: 0.9em;
+    color: #999;
+}
+
+.pokemonlist .card div {
+    font-size: 0.7em;
+    color: #555;
+    margin: 20px 0;
+    line-height: 1.5em;
+}
+
+.pokemonlist .card a {
+    margin: 0px auto;
+    padding: 5px;
+    width: 120px;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    background-color: #E2E2E2;
+    color: #555;
+    font-size: 0.9em;
+    text-align: center;
+}
+
+.pokemonlist .card:hover {
+    transform: rotate(3deg);
+}
+
+.pokemonlist .card.dark {
+    background: #555;
+}
+
+.pokemonlist .card.dark h3,
+.pokemonlist .card.dark p,
+.pokemonlist .card.dark a,
+.pokemonlist .card.dark div {
+    color: #E4E4E4;
+}
+
+.pokemonlist .card.dark a {
+    background: rgb(56, 53, 53);
+}
